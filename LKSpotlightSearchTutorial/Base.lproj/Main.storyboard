@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oof-B4-464">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Cars-->
+        <scene sceneID="0Jj-uZ-Of3">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController storyboardIdentifier="MainViewController" id="hmM-ew-dJf" customClass="MainViewController" customModule="LKSpotlightSearchTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ehe-BQ-Yo8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="143" id="lM2-rm-N6h" customClass="CarListCell" customModule="LKSpotlightSearchTutorial" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="143"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lM2-rm-N6h" id="Dcw-lp-Dwa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ela-5d-vpH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="142.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audi" translatesAutoresizingMaskIntoConstraints="NO" id="ZAI-eo-qbG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="112.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEc-M6-dDG">
+                                                    <rect key="frame" x="0.0" y="117.5" width="375" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="EED-Wp-Hcq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                                    <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="highlightedColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="shadowColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <size key="shadowOffset" width="0.5" height="1"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ela-5d-vpH" secondAttribute="trailing" id="7e0-VI-yF3"/>
+                                        <constraint firstAttribute="bottom" secondItem="ela-5d-vpH" secondAttribute="bottom" id="CEz-8Z-0sU"/>
+                                        <constraint firstItem="ela-5d-vpH" firstAttribute="leading" secondItem="Dcw-lp-Dwa" secondAttribute="leading" id="jMy-Oo-N2i"/>
+                                        <constraint firstItem="ela-5d-vpH" firstAttribute="top" secondItem="Dcw-lp-Dwa" secondAttribute="top" id="x3H-qq-pjH"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carBrandLbl" destination="yEc-M6-dDG" id="zNk-8K-kki"/>
+                                    <outlet property="carImgView" destination="ZAI-eo-qbG" id="OpS-Qo-eLl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hmM-ew-dJf" id="WlY-6l-GsM"/>
+                            <outlet property="delegate" destination="hmM-ew-dJf" id="wWG-Tq-lKG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Cars" id="UT0-Hs-JAT"/>
+                    <connections>
+                        <segue destination="UqH-Un-jRN" kind="show" identifier="toDetailVC" id="ZZ8-cL-MpH"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6T-Rj-civ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="546.39999999999998" y="48.125937031484263"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="wDI-g9-DFM">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="UqH-Un-jRN" customClass="DetailVC" customModule="LKSpotlightSearchTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqC-ZC-vs5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3D-6B-mIG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3Jb-SV-qxm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="0.016995774580000001" green="0.48766422269999998" blue="0.99898439650000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="audi" translatesAutoresizingMaskIntoConstraints="NO" id="hjs-6t-8V8">
+                                <rect key="frame" x="0.0" y="109" width="375" height="558"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qxf-p8-PXG" firstAttribute="trailing" secondItem="hjs-6t-8V8" secondAttribute="trailing" id="1TV-wx-h6A"/>
+                            <constraint firstItem="Qxf-p8-PXG" firstAttribute="bottom" secondItem="hjs-6t-8V8" secondAttribute="bottom" id="67K-06-WZg"/>
+                            <constraint firstItem="hjs-6t-8V8" firstAttribute="leading" secondItem="Qxf-p8-PXG" secondAttribute="leading" id="Duc-PZ-GaE"/>
+                            <constraint firstItem="C3D-6B-mIG" firstAttribute="leading" secondItem="Qxf-p8-PXG" secondAttribute="leading" id="IC6-e5-6qF"/>
+                            <constraint firstItem="Qxf-p8-PXG" firstAttribute="trailing" secondItem="C3D-6B-mIG" secondAttribute="trailing" id="Xfg-1x-AxR"/>
+                            <constraint firstItem="hjs-6t-8V8" firstAttribute="top" secondItem="C3D-6B-mIG" secondAttribute="bottom" id="cYe-A8-dVY"/>
+                            <constraint firstItem="C3D-6B-mIG" firstAttribute="top" secondItem="Qxf-p8-PXG" secondAttribute="top" id="xoL-y1-RcD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qxf-p8-PXG"/>
+                    </view>
+                    <connections>
+                        <outlet property="brand" destination="C3D-6B-mIG" id="VSU-eX-03h"/>
+                        <outlet property="img" destination="hjs-6t-8V8" id="PFb-Fd-MOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psd-5o-rb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="48"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xqx-66-CKT">
+            <objects>
+                <navigationController id="Oof-B4-464" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lTh-Hn-tPc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hmM-ew-dJf" kind="relationship" relationship="rootViewController" id="3bP-Gx-udZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTO-5U-0j1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-406" y="48"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="audi" width="250" height="165"/>
+    </resources>
 </document>

@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		5B18B91B2122EF7900A9D20F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B91A2122EF7900A9D20F /* AppDelegate.swift */; };
-		5B18B91D2122EF7900A9D20F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B91C2122EF7900A9D20F /* ViewController.swift */; };
+		5B18B91D2122EF7900A9D20F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B91C2122EF7900A9D20F /* MainViewController.swift */; };
 		5B18B9202122EF7900A9D20F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B18B91E2122EF7900A9D20F /* Main.storyboard */; };
 		5B18B9222122EF7B00A9D20F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B18B9212122EF7B00A9D20F /* Assets.xcassets */; };
 		5B18B9252122EF7B00A9D20F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B18B9232122EF7B00A9D20F /* LaunchScreen.storyboard */; };
+		5B18B92E2122F01300A9D20F /* Datasource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B18B92D2122F01300A9D20F /* Datasource.plist */; };
+		5B18B9302122F4D100A9D20F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B92F2122F4D100A9D20F /* Car.swift */; };
+		5B18B9322122F76B00A9D20F /* CarListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B9312122F76B00A9D20F /* CarListCell.swift */; };
+		5B18B9342122FA8A00A9D20F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B9332122FA8A00A9D20F /* DetailVC.swift */; };
+		5B18B936212315D600A9D20F /* AssetExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18B935212315D600A9D20F /* AssetExtractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B18B9172122EF7900A9D20F /* LKSpotlightSearchTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKSpotlightSearchTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B18B91A2122EF7900A9D20F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B18B91C2122EF7900A9D20F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B18B91C2122EF7900A9D20F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5B18B91F2122EF7900A9D20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B18B9212122EF7B00A9D20F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B18B9242122EF7B00A9D20F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B18B9262122EF7B00A9D20F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B18B92D2122F01300A9D20F /* Datasource.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Datasource.plist; sourceTree = "<group>"; };
+		5B18B92F2122F4D100A9D20F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		5B18B9312122F76B00A9D20F /* CarListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListCell.swift; sourceTree = "<group>"; };
+		5B18B9332122FA8A00A9D20F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		5B18B935212315D600A9D20F /* AssetExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetExtractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		5B18B9192122EF7900A9D20F /* LKSpotlightSearchTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				5B18B92C2122EFF800A9D20F /* DataSource */,
 				5B18B91A2122EF7900A9D20F /* AppDelegate.swift */,
-				5B18B91C2122EF7900A9D20F /* ViewController.swift */,
+				5B18B91C2122EF7900A9D20F /* MainViewController.swift */,
+				5B18B9332122FA8A00A9D20F /* DetailVC.swift */,
+				5B18B9312122F76B00A9D20F /* CarListCell.swift */,
+				5B18B935212315D600A9D20F /* AssetExtractor.swift */,
+				5B18B92F2122F4D100A9D20F /* Car.swift */,
 				5B18B91E2122EF7900A9D20F /* Main.storyboard */,
 				5B18B9212122EF7B00A9D20F /* Assets.xcassets */,
 				5B18B9232122EF7B00A9D20F /* LaunchScreen.storyboard */,
 				5B18B9262122EF7B00A9D20F /* Info.plist */,
 			);
 			path = LKSpotlightSearchTutorial;
+			sourceTree = "<group>";
+		};
+		5B18B92C2122EFF800A9D20F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5B18B92D2122F01300A9D20F /* Datasource.plist */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B18B9252122EF7B00A9D20F /* LaunchScreen.storyboard in Resources */,
+				5B18B92E2122F01300A9D20F /* Datasource.plist in Resources */,
 				5B18B9222122EF7B00A9D20F /* Assets.xcassets in Resources */,
 				5B18B9202122EF7900A9D20F /* Main.storyboard in Resources */,
 			);
@@ -135,8 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B18B91D2122EF7900A9D20F /* ViewController.swift in Sources */,
+				5B18B9342122FA8A00A9D20F /* DetailVC.swift in Sources */,
+				5B18B936212315D600A9D20F /* AssetExtractor.swift in Sources */,
+				5B18B91D2122EF7900A9D20F /* MainViewController.swift in Sources */,
 				5B18B91B2122EF7900A9D20F /* AppDelegate.swift in Sources */,
+				5B18B9322122F76B00A9D20F /* CarListCell.swift in Sources */,
+				5B18B9302122F4D100A9D20F /* Car.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
